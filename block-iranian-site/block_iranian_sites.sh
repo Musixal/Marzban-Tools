@@ -17,7 +17,7 @@ echo 'XRAY_ASSETS_PATH = "/var/lib/marzban/assets/"' >> env
 read -p 'Enter your website without https:// : ' website
 rm xray_config.json
 curl -s -O xray_config.json https://raw.githubusercontent.com/MusiXal/Marzban-Tools/main/block-iranian-site/xray_config.json
-sed -i 's/www.example.com/'"$website"'/g' xrayconfig.json
+sed -i 's/www.example.com/'"$website"'/g' xray_config.json
 echo "Restaring Marzban..."
 docker compose down
 docker compose up -d
