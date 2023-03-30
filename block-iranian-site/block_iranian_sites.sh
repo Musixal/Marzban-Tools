@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "Welcome to block-iranian-sites tools \n"
+echo -e "Block-iranian-sites tool for Marzban FULLY SINGLE PORT \n"
 
 if [ ! -e env ]
 then
