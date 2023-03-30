@@ -16,7 +16,7 @@ curl -s -O /var/lib/marzban/assets/iran.dat https://github.com/bootmortis/iran-h
 echo 'XRAY_ASSETS_PATH = "/var/lib/marzban/assets/"' >> env
 read -p 'Enter your website without https:// : ' website
 rm xray_config.json
-wget -O xray_config.json https://raw.githubusercontent.com/MusiXal/Marzban-Tools/main/block-iranian-site/xray_config.json
+curl -s -O xray_config.json https://raw.githubusercontent.com/MusiXal/Marzban-Tools/main/block-iranian-site/xray_config.json
 sed -i 's/www.example.com/'"$website"'/g' xrayconfig.json
 echo "Restaring Marzban..."
 docker compose down
