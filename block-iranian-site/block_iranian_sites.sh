@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Welcome to block-iranian-sites tools"
+echo -e "Welcome to block-iranian-sites tools \n"
 
 if [ ! -e env ]
 then
@@ -8,7 +8,7 @@ then
     exit
 fi
 
-echo "downloading necessary files..."
+echo -e "downloading necessary files... \n"
 mkdir -p /var/lib/marzban/assets/
 curl -s -O /var/lib/marzban/assets/geosite.dat https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat
 curl -s -O /var/lib/marzban/assets/geoip.dat https://github.com/v2fly/geoip/releases/latest/download/geoip.dat
