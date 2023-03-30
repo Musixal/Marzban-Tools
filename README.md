@@ -1,2 +1,2 @@
 # Marzban-Tools
-Tools to improve the experience of working with Marzaban
+Tools to improve the experience of using Marzaban panel
