@@ -7,7 +7,7 @@ Run this command in Marzban FOLDER:
 bash -c "$(curl -s -L https://raw.githubusercontent.com/Musixal/Marzban-Tools/main/block-iranian-site/block_iranian_sites.sh)" @ install
 ```
 
-What this script do:
+What does this script do:
   1. Check correct directory
   2. Build assest directory
   3. Downloading assests files
