@@ -72,9 +72,6 @@ net.ipv6.conf.default.accept_redirects = 0
 net.ipv4.conf.all.log_martians = 1
 net.ipv4.conf.default.log_martians = 1
 
-# Decrease the time default value for tcp_fin_timeout connection
-net.ipv4.tcp_fin_timeout = 7
-
 # Don't relay bootp
 net.ipv4.conf.all.bootp_relay = 0
 
