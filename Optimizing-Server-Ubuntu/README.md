@@ -192,22 +192,6 @@ net.ipv4.tcp_fastopen = 3
 net.ipv4.route.flush = 1
 net.ipv6.route.flush = 1
 
-
-# Default Socket Receive Buffer
-net.core.rmem_default = 31457280
-
-# Maximum Socket Receive Buffer
-net.core.rmem_max = 12582912
-
-# Default Socket Send Buffer
-net.core.wmem_default = 31457280
-
-# Maximum Socket Send Buffer
-net.core.wmem_max = 12582912
-
-# Increase number of incoming connections
-net.core.somaxconn = 4096
-
 # Increase number of incoming connections backlog
 net.core.netdev_max_backlog = 65536
 
