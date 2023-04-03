@@ -3,15 +3,12 @@ Ubuntu server out of box is not optimized to make full use of available hardware
 So we need to tweak system configuration for maximum concurrancy.
 
 # Sysctl Tweaks
-
 Open
 ```
-
 vim /etc/sysctl.conf
 ```
 Add following towards bottom
 ```
-
 ### IMPROVE SYSTEM MEMORY MANAGEMENT ###
 
 # Increase size of file handles and inode cache
