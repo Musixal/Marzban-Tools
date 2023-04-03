@@ -125,11 +125,8 @@ net.core.wmem_max = 16777216
 net.core.somaxconn = 32768
 
 # Increase number of incoming connections backlog
-net.core.netdev_max_backlog = 16384
+net.core.netdev_max_backlog = 65536
 net.core.dev_weight = 64
-
-# Increase the maximum amount of option memory buffers
-net.core.optmem_max = 65535
 
 # Increase the tcp-time-wait buckets pool size to prevent simple DOS attacks
 net.ipv4.tcp_max_tw_buckets = 1440000
@@ -192,9 +189,6 @@ net.ipv4.tcp_fastopen = 3
 net.ipv4.route.flush = 1
 net.ipv6.route.flush = 1
 
-# Increase number of incoming connections backlog
-net.core.netdev_max_backlog = 65536
-
 # Increase the maximum amount of option memory buffers
 net.core.optmem_max = 25165824
 
@@ -203,18 +197,6 @@ net.core.optmem_max = 25165824
 net.ipv4.tcp_mem = 65536 131072 262144
 net.ipv4.udp_mem = 65536 131072 262144
 
-# Increase the read-buffer space allocatable
-net.ipv4.tcp_rmem = 8192 87380 16777216
-net.ipv4.udp_rmem_min = 16384
-
-# Increase the write-buffer-space allocatable
-net.ipv4.tcp_wmem = 8192 65536 16777216
-net.ipv4.udp_wmem_min = 16384
-
-# Increase the tcp-time-wait buckets pool size to prevent simple DOS attacks
-net.ipv4.tcp_max_tw_buckets = 1440000
-net.ipv4.tcp_tw_recycle = 1
-net.ipv4.tcp_tw_reuse = 1
 ```
 ## Load Changes
 
