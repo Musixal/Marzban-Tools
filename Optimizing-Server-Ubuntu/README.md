@@ -192,7 +192,7 @@ net.ipv4.tcp_mem = 65536 131072 262144
 net.ipv4.udp_mem = 65536 131072 262144
 
 #Enable low latency mode for TCP:
-sysctl -w net.ipv4.tcp_low_latency=1
+net.ipv4.tcp_low_latency=1
 
 ```
 ## Load Changes
